@@ -1,0 +1,17 @@
+<div class="flex__body">
+    <div class="flex__row wrapper__list-title_height wrapper__list-title_padding ">
+        <div class="flex__row_300">Words List</div>
+        <div class="flex__row_1 flex__row flex__row_right">
+                <a class="button">CLICK 1</a>
+                <a class="button">CLICK 2</a>
+        </div>
+    </div>
+    <div class="flex__row wrapper__list_padding">
+        <ul class="list__container">
+            <li class='flex__row list__item' *ngFor="#word of words">
+                <div class="flex__row_1 list__item_height  list__name-section">{{ word.name }}</div>
+                <div class="flex__row_1 list__item_height  list__value-section">{{ word.value }}</div>
+            </li>
+        </ul>
+    </div>
+</div>
